@@ -4,7 +4,7 @@ async function alreadyRegister(req, res, next) {
     const gym = await Gym.findOne({ username: req.body.username })
     if (gym) {
         return res.status(400).json({
-            succes: false,
+            success: false,
             message: `El gimnasio ${gym.username} ya se encuentra registrado`
         })
     }

@@ -9,10 +9,17 @@ const controller = {
             req.body.password = bcryptjs.hashSync(req.body.password, 10);
 
             const gym = await Gym.create(req.body);
-            return res.status(201).json({
-                success: true,
-                message: 'Gimnasio Registrado'
-            });
+            if(gym){
+                return res.status(201).json({
+                    success: true,
+                    message: 'Gimnasio Registrado'
+                });
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: 'Ocurrió un problema, intenta nuevamente'
+                })
+            }
         } catch (err) {
             next(err);
         }

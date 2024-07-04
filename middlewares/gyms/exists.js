@@ -12,7 +12,7 @@ async function exists(req,res,next) {
         return next()
     }
     return res.status(400).json({
-        succes: false,
+        success: false,
         message: 'Datos Incorrectos'
     })
 }
