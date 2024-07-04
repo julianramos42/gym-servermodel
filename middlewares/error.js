@@ -9,5 +9,5 @@ export function errorHandler(err, req, res, next) {
 }
 
 export function errorNotFound(req, res, next) {
-  next(createError(404, 'The route does not exist'))
+  next(createError(404, 'La ruta no existe'))
 }
