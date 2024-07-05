@@ -17,18 +17,18 @@ Este es un servidor backend desarrollado con Node.js y Express que permite la ge
 
 ## Instalación
 1. Clona el repositorio:
-    - git clone https://github.com/julianramos42/gym-servermodel.git .
+- git clone https://github.com/julianramos42/gym-servermodel.git .
 
 2. Instala las dependecias:
-    - npm i
+- npm i
 
 3. Configura las variables de entorno en un archivo '.env':
-    - PORT = 8080
-    - MONGO = tu url database de mongo
-    - SECRET = tu clave secreta
+- PORT = 8080
+- MONGO = tu url database de mongo
+- SECRET = tu clave secreta
 
 4. Iniciar el servidor:
-    - npm start o npm run dev para usar nodemon
+- npm start o npm run dev para usar nodemon
 
 ## Uso
 1. Registro de Gimnasio:
