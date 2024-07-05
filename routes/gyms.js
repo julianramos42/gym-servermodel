@@ -16,7 +16,7 @@ const {signUp, signIn, signOut} = controller;
 let router = express.Router();
 
 router.post('/signup', validator(signUpSchema), alreadyRegister, signUp);
-router.get('/signin', validator(signInSchema), exists, correctPassword, signIn);
+router.post('/signin', validator(signInSchema), exists, correctPassword, signIn);
 router.get('/signout', passport.authenticate('jwt',{session:false}), signOut);
 
 export default router;
